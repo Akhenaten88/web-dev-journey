@@ -1,0 +1,28 @@
+# OS files (Mac)
+.DS_Store
+
+# VS Code settings (optional)
+.vscode/
+
+# Node modules (for future JS/React projects)
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables (VERY IMPORTANT)
+.env
+.env.local
+.env.*.local
+
+# Build outputs
+dist/
+build/
+
+# Temporary files
+*.log
+
+# Coverage reports (testing later)
+coverage/
