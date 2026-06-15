@@ -1,0 +1,153 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #2b2839;
+  background: #f9f9f9;
+}
+
+/* ── Hero Section ── */
+#header {
+  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+              url('hero.jpg') center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+#header h1 {
+  font-size: 52px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+}
+
+#header h2 {
+  font-size: 18px;
+  font-weight: 400;
+  max-width: 600px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+/* ── Activities Section ── */
+#activity {
+  padding: 60px 40px;
+  background: #fff;
+  text-align: center;
+}
+
+#activities-header {
+  font-size: 24px;
+  margin-bottom: 40px;
+  color: #2b2839;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.spots {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.round {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #d8cefe;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.round:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+.spots .bold {
+  font-size: 14px;
+  font-weight: 600;
+  color: #2b2839;
+}
+
+.spots .describe {
+  font-size: 13px;
+  color: #7a7a8c;
+  line-height: 1.6;
+}
+
+/* ── Guide Section ── */
+#container-2 {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 60px 80px;
+  background: #ddebf8;
+}
+
+.self-pic {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  flex-shrink: 0;
+}
+
+.wrapper h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #2b2839;
+}
+
+.wrapper h4 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 12px;
+  color: #534ab7;
+}
+
+#brief_intro {
+  font-size: 14px;
+  color: #534ab7;
+  line-height: 1.7;
+}
+
+/* ── Utility classes ── */
+.bold {
+  font-weight: 700;
+}
+
+.italic {
+  font-style: italic;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  #header h1 { font-size: 36px; }
+  #header h2 { font-size: 15px; }
+
+  #container { flex-direction: column; align-items: center; }
+
+  #container-2 {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 24px;
+  }
+}
