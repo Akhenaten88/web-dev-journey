@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/3.1.0/iconfont/tabler-icons.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="generatorInfo">
+            <div class="subjectHeader">
+                <div class="secure-logo"></div>
+                <div class="mainHeader">
+                    <h1>Generate a <br><span id="color-me">random password</span></h1>
+                    <p>Never use an insecure password again</p>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <hr>
+        </div>
+
+        <div class="your-password">
+            <div class="passwordSection">
+                <div class="pasSpace" id="firstPassword"></div>
+                <i class="ti ti-copy" id="copyFirstPw" onclick="copyFirstPw()"></i>
+            </div>
+            <div class="passwordSection">
+                <div class="pasSpace" id="secondPassword"></div>
+                <i class="ti ti-copy" id="copySecondPw" onclick="copySecondPw()"></i>
+            </div>
+        </div>
+
+        <div>
+            <button id="generatePass">Generate password</button>
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
